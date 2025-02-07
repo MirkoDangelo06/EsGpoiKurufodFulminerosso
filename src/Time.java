@@ -39,7 +39,12 @@ public class Time {
     }
 
 
-    
+    public void addSecondi(int secondi){;
+        this.secondi += secondi;
+        if(this.secondi > 59){
+            minuti += (this.secondi%60);
+        }
+    }
 
 
 }
