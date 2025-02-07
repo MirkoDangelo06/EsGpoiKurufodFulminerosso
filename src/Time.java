@@ -39,7 +39,16 @@ public class Time {
     }
 
 
-    
+    public int convertiSecondi(Time time){
+
+        return  (time.ore*3600) + (time.minuti*60) + time.secondi;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Time [ore=" + ore + ", minuti=" + minuti + ", secondi=" + secondi + "]";
+    }
 
 
 }
